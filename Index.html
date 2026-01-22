@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/all.min.css">
+    <title>Book Your Trip | Home</title>
+    <link href = "CSS/Book Your Trip.css" rel = "stylesheet" >
+</head>
+<body>
+     <header>
+         <div class="slider">
+             <div class="slides" id="slides">
+                 <img src="Images/image1.jpg" alt="">
+                 <img src="Images/image2.jpg" alt="">
+                 <img src="Images/image3.jpg" alt="">
+                 <img src="Images/image4.jpg" alt="">
+             </div>
+
+             <div class="overlay-text">
+                 <h1>Book Your Trip</h1>
+                 <p>Explore the world with us</p>
+             </div>
+         </div>
+     </header>
+
+     <nav class="navbar">
+             <ul class="nav-links" id="navLinks">
+                 <li><a href="Index.html" style = "font-family: Georgia, 'Times New Roman', Times, serif; color:black">Home</a></li>
+                 <li><a href="About.html">About</a></li>
+                 <li><a href="Event.html">Event</a></li>
+                 <li><a href="Gallery.html">Gallery</a></li>
+                 <li><a href="Contact.html">Contact</a></li>
+             </ul>
+         <div class="menu-icon" onclick="toggleMenu()">☰</div>
+     </nav>
+
+     <section>
+
+         <article> <h2>Brief</h2>
+         <p>We are a dedicated travel agency committed to turning your travel dreams into memorable experiences. 
+         From carefully planned itineraries to seamless bookings, we take care of every detail so you can travel 
+         stress-free. Whether it’s a short getaway or a long vacation, we ensure comfort, reliability, and unforgettable 
+         moments at every step of your journey .</p>
+         </article>
+
+         <article> <h2>Booking Form</h2>
+
+         <form id="bookingForm"> <label for="email">Email Address :</label> <input type="email"id="email"name="email"placeholder="you@example.com"required> <br> <br>
+
+         <label for="guests"> Number of Travelers ( 1 – 10 ) :</label> <input type="number"id="guests"name="guests"min="1"max="10"required> <br> <br>
+
+         <label for="budget">Budget Range (500 – 5000 INR) :</label> <input type="range"id="budget"name="budget"min="500"max="5000"value="2000"> <br> <br>
+
+         <button type="submit">Submit</button> 
+
+         </form>
+
+         </article>
+
+     </section>
+
+     <footer> <p>&copy; 2026 Book Your Trip . All Rights Reserved .</p> </footer>
+
+     <script src="Js/Book Your Trip.js" defer>
+         
+     </script>
+
+
+</body>
+</html>
